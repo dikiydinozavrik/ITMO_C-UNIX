@@ -1,0 +1,494 @@
+    1  cd ./Home
+    2  cd ./zeliboba
+    3  cd ./USER
+    4  cd ./USER/
+    5  ls -l
+    6  cd ./usr
+    7  cd /usr/
+    8  cd /local/
+    9  ls -l
+   10  cd /local
+   11  cd ./local
+   12  mkdir folder_max
+   13  mkdir ./folder_max
+   14  mkdir /usr/local/folder_max
+   15  sudo mkdir folder_max
+   16  ls -l
+   17  sudo mkdir folder_min
+   18  ls -l
+   19  groupadd group_max 
+   20  sudo groupadd group_max 
+   21  sudo groupadd group_min 
+   22  sudi useradd user_max_1
+   23  sudo useradd user_max_1
+   24  sudo useradd user_min_1
+   25  sudo usermod -a -G group_max user_max_1
+   26  sudo usermod -a -G group_min user_min_1
+   27  cat /etc/group
+   28  setfacl -m g:group_max:rwx folder_max folder_min
+   29  sudo setfacl -m g:group_max:rwx folder_max folder_min
+   30  sudo setfacl -m g:group_mix:rwx folder_min
+   31  sudo setfacl g:group_mix:rwx folder_min
+   32  sudo setfacl -m g:group_min:rwx folder_min
+   33  getfacl /folder_min
+   34  getfacl /folder_min/
+   35  getfacl ./folder_min/
+   36  getfacl ./folder_max/
+   37  cd ./folder_max
+   38  nano script.sh
+   39  su - user_max_1
+   40  sudo passwd -d user_max_1
+   41  su - user_max_1
+   42  cd /usr/local
+   43  ls-l
+   44  ls -l
+   45  sudo passwd user_max_1
+   46  sudo su user_max_1
+   47  sudo nano script.sh
+   48  docker build -t script_img .
+   49  sudo docker build -t script_img .
+   50  sudo nano Dockerfile
+   51  sudo apt update && apt install nano -y
+   52  sudo docker build -t script_img .
+   53  sudo apt-get update && apt-get install -y apt-transport-https
+   54  sudo nano Dockerfile
+   55  sudo docker build -t script_img .
+   56  docker ps
+   57  sudo docker -l
+   58  sudo docker ps
+   59  sudo docker run script_img
+   60  sudo docker ps
+   61  sudo docker ps -a
+   62  sudo nano Dockerfile
+   63  sudo nano script.sh
+   64  sudo docker -it script_img bash
+   65  sudo docker run -it script_img bash
+   66  getfacl /usr/local/folder_max
+   67  getfacl /usr/local/folder_max/output.log
+   68  getfacl /usr/local/folder_max/script2.sh
+   69  cd /usr/local
+   70  cd /usr/local/folder_max
+   71  ls -l
+   72  sudo nano script1.sh
+   73  sudo ./script1.sh
+   74  sudo su user_max_1 ./script1.sh
+   75  cat ./script.sh
+   76  cat ./script1.sh
+   77  cat output.log
+   78  sudo nano script2.sh
+   79  cat script2.sh
+   80  sudo su user_max_1 ./script2.sh
+   81  cat /usr/local/folder_min/output.log
+   82  sudo su user_min_1 ./script2.sh
+   83  cd /usr/local/folder_min
+   84  ls -l
+   85  sudo nano script3.sh
+   86  sudo su user_min_1 ./script3.sh
+   87  sudo nano script3.sh
+   88  sudo su user_min_1 ./script3.sh
+   89  cd /folder_max
+   90  cd ../folder_max
+   91  ls -l
+   92  cat /etc/group
+   93* su user_max_1 ./script2.sh
+   94  sudo su user_min_1 ./script2.sh
+   95  ls -l ../folder_min/
+   96  ls -la ../folder_min/
+   97  ./script2.sh
+   98  sudo su user_min_1 ./script2.sh
+   99  ls -la
+  100  sudo su user_max_1 ./script2.sh
+  101  cat output.log 
+  102  cat ../folder_min/output.log 
+  103  cd /usr/local
+  104  mkdir -p lab_01/{build,src,doc,cmake}
+  105  sudo mkdir -p lab_01/{build,src,doc,cmake}
+  106  cd ./lab_01
+  107  ls -l
+  108  cd /usr/local/lab_01
+  109  sudo git init
+  110  git add *
+  111  ls -l
+  112  sudo git add *
+  113  sudo git add LICENSE
+  114  sudo git commit -m 'Initial project version'
+  115  sudo git commit -m "change1" https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  116  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  117  git push origin master
+  118  sudo git push origin master
+  119  sudo git init
+  120  git add .
+  121  sudo git add .
+  122  sudo git commit
+  123  git config --global user.name zeliboba
+  124  git push -u origin master
+  125  sudo git push -u origin master
+  126  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  127  git push -u origin main
+  128  sudo git push -u origin main
+  129  history
+  130  sudo git branch -M main
+  131  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  132  ls -l
+  133  ls -la
+  134  sudo git push -u origin main
+  135  sudo git branch -a
+  136  sudo git branch dev
+  137  sudo git commit -m "1"
+  138  sudo config --global user.name zeliboba
+  139  sudo git config --global user.name zeliboba
+  140  touch "READ.ME"
+  141  sudo touch "READ.ME"
+  142  sudo git commit -m "Privet"
+  143  sudo git config --global user.name zeliboba
+  144  sudo git commit -m "Privet"
+  145  sudo git config --global user.name "zeliboba"
+  146  sudo git commit -m "Privet"
+  147  sudo git config --global user.name "Nivetha"
+  148  sudo git commit -m "Privet"
+  149  sudo git config --global user.email "you@example.com"
+  150  sudo git commit -m "Privet"
+  151  sudo git add .
+  152  sudo git commit -m "Privet"
+  153  sudo git status
+  154  cd /usr/local/
+  155  ls -la
+  156  cd ./folder_max
+  157  ls -l
+  158  sudo su user_min_1 ./script2.sh
+  159  getfacl ../folder_min
+  160  su - user_min_1
+  161  su - user_max_1
+  162  sudo passwd user_min_1
+  163  su - user_min_1
+  164  sudo chgroup /usr/local/folder_max
+  165  sudo chgrp /usr/local/folder_max
+  166  sudo chgrp group_max /usr/local/folder_max
+  167  sudo chgrp group_min /usr/local/folder_min
+  168  cd ./
+  169  cd ../
+  170  ls -l
+  171  setfacl man 
+  172  man setfacl
+  173  sudo setfacl -m g:group_max:rwx folder_min
+  174  getfacl ./folder_min
+  175  su - user_max_1
+  176  cat /etc/group
+  177  cd /folder_max
+  178  cd ./folder_max
+  179  ls -l
+  180  chmod u+x ./script1.sh
+  181  sudo chmod u+x ./script1.sh
+  182  ls -l
+  183  su - user_max_1
+  184  su - user_min_1
+  185  cd ../
+  186  ls -l
+  187  cd ./folder_max
+  188  ls -l
+  189  chmod o-x ./script2.sh
+  190  sudo chmod o-x ./script2.sh
+  191  ls -l
+  192  su - user_min_1
+  193  ls -l
+  194  cd ../
+  195  ls -l
+  196  cd ./folder_min
+  197  ls -l
+  198  history
+  199  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  200  cd ../
+  201  ls -l
+  202  cd ./lab_01
+  203  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  204  rm -R ./lab_01
+  205  cd ../
+  206  rm -R ./lab_01
+  207  ls -l
+  208  cd ./lab_01
+  209  ls -l a
+  210  ls -la
+  211  sudo rm -rf .git
+  212  ls -la
+  213  rm -R ./lab_01
+  214  cd ../
+  215  rm -R ./lab_01
+  216  ls -l
+  217  rm -rf ./lab_01
+  218  sudo rm -rf ./lab_01
+  219  ls -l
+  220  sudo mkdir -p lab_01/{build,rc,doc,cmake}
+  221  cd ./lab_01
+  222  echo "# ITMO_C-UNIX" >> README.md
+  223  git init
+  224  git add README.md
+  225  git commit -m "first commit"
+  226  git branch -M main
+  227  git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  228  git push -u origin main
+  229  sudo echo "# ITMO_C-UNIX" >> README.md
+  230  ls -k
+  231  ls -l
+  232  sudo echo "# ITMO_C-UNIX" >> ./README.md
+  233  ls -la
+  234  sudo chmodsu -
+  235  su -
+  236  cd ../
+  237  ls -l
+  238  cd ./lab_01
+  239  sudo touch README.md
+  240  sudo echo "# ITMO_C-UNIX" >> README.md
+  241  sudo echo "1"
+  242  sudo nano README.md
+  243  cat README.md\
+  244  cat README.md
+  245  sudo git init
+  246  sudo git add .
+  247  git commit -m "first commit"
+  248  sudo git commit -m "first commit"
+  249  sudo git branch -M main
+  250  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX.git
+  251  sudo git push -u origin main
+  252  sudo git branch 
+  253  sudo git branch dev
+  254  sudo git branch 
+  255  ls -l
+  256  sudo git stg
+  257  sudo git branch stg
+  258  sudo git branch prd
+  259  sudo git branch 
+  260  git checkout dev
+  261  sudo git checkout dev
+  262  sudo git branch 
+  263  sudo git branch -d main
+  264  sudo git commit
+  265  sudo git commit -m "commit_dev"
+  266  sudo git add .
+  267  sudo git commit -m "commit_dev"
+  268  sudo git add README.md
+  269  sudo git commit -m "commit_dev"
+  270  ls -l
+  271  nano README.md
+  272  sudo git commit -m "commit_dev"
+  273  sudo git commit -a
+  274  sudo git branch -r
+  275  sudo git branch -a
+  276  sudo git log
+  277  nano README.md
+  278  sudo nano README>me
+  279  sudo nano README.me
+  280  sudo nano README.md
+  281  sudo git add README.md
+  282  sudo git commit -m "commit_dev"
+  283  sudo git push
+  284  sudo git remote add origin https://github.com/dikiydinozavrik/ITMO_C-UNIX
+  285  sudo git push-u origin dev
+  286  sudo git push -u origin dev
+  287  sudo nano README.md
+  288  sudo git commit -m "commit_stg"
+  289  sudo git checkout stg
+  290  sudo git stash 
+  291  sudo git checkout stg
+  292  sudo git stash pop
+  293  sudo git commit -m "commit_stg"
+  294  sudo git status
+  295  sudo git restore --staged README.md
+  296  sudo git status
+  297  sudo git log
+  298  sudo git branch
+  299  sudo git add README.md
+  300  sudo git commit -m "commit_stg"
+  301  sudo git push -u origin stg
+  302  sudo git checkout prd
+  303  sudo nano README.md
+  304  sudo git commit -m "commit_prd"
+  305  sudo git add README.md
+  306  sudo git commit -m "commit_prd"
+  307  sudo git push -u origin stg
+  308  sudo git push -u origin prd
+  309  sudo git push origin -d main
+  310  sudo git log
+  311  sudo git push origin -d main
+  312  sudo nano script_dev_stg.sh
+  313  sudo git checkout dev
+  314  sudo nano README.md
+  315  sudo git add README.md
+  316  sudo ./script_dev_stg.sh
+  317  ls -l
+  318  script_dev_stg.sh
+  319  sudo ./script_dev_stg.sh
+  320  sudo nano script_dev_stg.sh
+  321  sudo ./script_dev_stg.sh
+  322  sudo script_dev_stg.sh
+  323  script_dev_stg.sh
+  324  sudo nano script_dev_stg.sh
+  325  script_dev_stg.sh
+  326  sudo script_dev_stg.sh
+  327  sudo ./script_dev_stg.sh
+  328  ls -l
+  329  chmod u+x ./script_dev_stg.sh
+  330  sudo chmod u+x ./script_dev_stg.sh
+  331  sudo ./script_dev_stg.sh
+  332  sudo nano script_dev_stg.sh
+  333  sudo ./script_dev_stg.sh
+  334  sudo nano script_dev_stg.sh
+  335  sudo ./script_dev_stg.sh
+  336  sudo nano script_dev_stg.sh
+  337  sudo ./script_dev_stg.sh
+  338  sudo git reset --hard origin/stg
+  339  sudo ./script_dev_stg.sh
+  340  sudo nano script_dev_stg.sh
+  341  ls -a
+  342  cd ./build
+  343  touch .gitkeep
+  344  sudo touch .gitkeep
+  345  git add .
+  346  cd ../
+  347  sudo git add .
+  348  sudo git commit
+  349  sudo git push origin std
+  350  sudo git branch
+  351  sudo git push origin stg
+  352  cd ./doc
+  353  sudo touch .gitkeep
+  354  cd ./doc
+  355  cd ../
+  356  cd ./src
+  357  ls -l
+  358  cd ./rc
+  359  sudo touch .gitkeep
+  360  cd ../
+  361  cd ./cmake
+  362  sudo touch .gitkeep
+  363  cd ../
+  364  sudo git add .
+  365  sudo git commit -m "adding directories"
+  366  sudo git push origin stg
+  367  ls -l
+  368  nano dev_stg.sh
+  369  sudo nano dev_stg.sh
+  370  git branch
+  371  sudo git branch
+  372  sudo git checkout dev
+  373  sudo nano README.md
+  374  sudo git add .
+  375  sudo git commit -m "script_testing"
+  376  sudo dev_stg.sh
+  377  sudo ./dev_stg.sh
+  378  sudo nano dev_stg.sh
+  379  sudo ./dev_stg.sh
+  380  sudo nano dev_stg.sh
+  381  sudo ./dev_stg.sh
+  382  sudo dev_stg.sh
+  383  sudo nano dev_stg.sh
+  384  sudo dev_stg.sh
+  385  ls -l
+  386  chmod u+x dev_stg.sh
+  387  sudo chmod u+x dev_stg.sh
+  388  sudo dev_stg.sh
+  389  ls -l
+  390  dev_stg.sh
+  391  run dev_stg.sh
+  392  sudo nano dev_stg.sh
+  393  dev_stg.sh
+  394  cd ./local
+  395  cd../
+  396  cd ../
+  397  ls -l
+  398  cd ./folder_max
+  399  cat ./script1.sh
+  400  cd ../
+  401  cd ./lab_01
+  402  sudo nano dev_stg.sh
+  403  dev_stg.sh
+  404  sudo nano scriptGIT.sh
+  405  sudo scriptGIT.sh
+  406  cd ../
+  407  ls -l
+  408  cd ./lab_01
+  409  ls -l
+  410  sudo scriptGIT.sh
+  411  sudo chmod u+x scriptGIT.sh
+  412  sudo scriptGIT.sh
+  413  sudo nano scriptGIT.sh
+  414  sudo scriptGIT.sh
+  415  cd ../
+  416  ls -l
+  417  cat script.sh}
+  418  cat script.sh]
+  419  sudo touch scriptik.sh
+  420  sudo nano scriptik.sh
+  421  sudo scriptik.sh
+  422  sudo nano scriptik.sh
+  423  sudo scriptik.sh
+  424  sudo ./scriptik.sh
+  425  sudo chmod 777 ./scriptik.sh
+  426  sudo ./scriptik.sh
+  427  cd ./locasl/lab_01
+  428  cd ./local/lab_01
+  429  cd ./lab_01
+  430  sudo chmod 777 dev_stg.sh
+  431  sudo ./dev_stg,sh
+  432  sudo ./dev_stg.sh
+  433  git log
+  434  sudo git log
+  435  sudo git ckeckout stg
+  436  sudo git checkout stg
+  437  sudo git tag
+  438  git show date
+  439  sudo git show date
+  440  sudo git checkout dev
+  441  sudo nano dev_stg.sh
+  442  sudo ./dev_stg.sh
+  443  sudo nano dev_stg.sh
+  444  sudo nano stg_prd.sh
+  445  sido git branch
+  446  sudo git branch
+  447  sudo git checkout stg
+  448  sudo git stash
+  449  sudo git checkout stg
+  450  sudo nano README.md
+  451  sudo git add .
+  452  sudo git commit -m "stg->prd"
+  453  sudo chmod 777 ./stg_prd.sh
+  454  sudo ./syg_prd.sh
+  455  sudo ./stg_prd.sh
+  456  sudo nano ./dev_stg.sh
+  457  ls -l
+  458  sudo cat scriptGIT.sh
+  459  rm scriptGIT.sh
+  460  sudo nano stg_prd.sh
+  461  cd ./
+  462  ls -l
+  463  cd ../
+  464  ls -l
+  465  cat scriptik.sh
+  466  sudo rm scriptik.sh
+  467  cd ./lab_01
+  468  ls -la
+  469  sudo rm scriptGIT.sh
+  470  ls -la
+  471  sudo nano dev_stg.sh
+  472  git brach
+  473  git branch
+  474  sudo git branch
+  475  sudo git checkout dev
+  476  sudo git stash
+  477  sudo git checkout dev
+  478  sudo git add .
+  479  sudo git checkout dev
+  480  sudo git commit
+  481  sudo git checkout dev
+  482  sudo git stash
+  483  sudo git checkout dev
+  484  ls -la
+  485  sudo nano stg_prd.sh
+  486  ls -la
+  487  sudo git add .
+  488  sudo git commit -m "final"
+  489  sudo git push origin
+  490  sudo git pull
+  491  sudo git config pull.rebase false
+  492  sudo git pull
+  493  sudo git commit -m "final"
+  494  sudo git push origin
